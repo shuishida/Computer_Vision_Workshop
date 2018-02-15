@@ -1,0 +1,11 @@
+{
+  "name": "artworks",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.8.2",
+    "underscore": "~1.8.3"
+  }
+}
