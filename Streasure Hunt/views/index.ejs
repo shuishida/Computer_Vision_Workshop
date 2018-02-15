@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Street View Treasure Hunt</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/assets/css/style.css">
+  <link rel="stylesheet" href="/public/assets/css/task.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4" id="task">
+
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Streasure Hunt</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-item nav-link" href="#">Features</a>
+              <a class="nav-item nav-link" href="#">Pricing</a>
+              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            </div>
+          </div>
+        </nav>
+
+        <ul id="myUL">
+          <li class="bg-warning task-title">Keys you need to find</li>
+        </ul>
+
+        <div class="col-12">
+            <div class="row" id="gallery">
+            </div>
+
+
+            <div class="row text-center treasurebox">
+              <img src="/public/assets/img/box.png" alt="">
+            </div>
+            <div class="row dashboard"><div class='col-3'></div>
+            <div class='col-2'><img class='img-thumbnail img-forwards' src='/public/assets/img/key.png'><div class='caption'>3</div></a></div>
+            <div class='col-2'><img class='img-thumbnail img-angles' src='/public/assets/img/key.png'><div class='caption'>3</div></a></div>
+            <div class='col-2'><img class='img-thumbnail img-sides' src='/public/assets/img/key.png'><div class='caption'>2</div></a></div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-md-8">
+        <div class="row text-center">
+          <div class="jumbotron jumbotron-fluid">
+            <h1>Find the keys in the map before time's up!</h1>
+            <button class="btn btn-round btn-success" id="gameStartBtn" onclick="gameStart()">Game Start</button>
+            <button class="btn btn-round btn-warning d-none" id="processImageBtn" onclick="processImage()">Analyze image</button>
+            <button class="btn btn-round btn-danger d-none" id="gameResetBtn" onclick="gameReset()">Try again!</button>
+          </div>
+        </div>
+        <div class="row bg-dark">
+          <div id="tags"></div>
+        </div>
+        <div class="row" style="height: 300px;">
+          <div class="col-sm-6" id="map"></div>
+          <div class="col-sm-6" id="pano"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  
+  <script src="/public/assets/js/msp.js"></script>
+  <script src="/public/assets/js/googlemap.js"></script>
+  <script src="/public/assets/js/tasklist.js"></script>
+  <script src="/public/assets/js/mscv.js"></script>
+  <script src="/public/assets/js/gallery.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHBJ0jerBtpGsetlWZRk77t50AxHqZtXI&callback=initialize">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

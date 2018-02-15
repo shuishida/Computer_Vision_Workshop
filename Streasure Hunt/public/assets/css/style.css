@@ -1,0 +1,102 @@
+body {
+  background-image: url("../img/wood-bg.jpg");
+  background-repeat: repeat;
+}
+
+.bar {
+  width: 0%;
+  height: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.jumbotron {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+.jumbotron h1 {
+  margin: 20px;
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.btn-round {
+  border-radius: 20px;
+}
+::-webkit-scrollbar { 
+  display: none; 
+}
+  #tags {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  
+  #tags .btn {
+    display: inline-block;
+    vertical-align:top;
+    margin: 5px 0 5px 5px;
+  }
+
+  .caption {
+    opacity: 0.8;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  #gallery div {
+    margin: 0;
+    padding: 10px 5px;
+  }
+
+  .dashboard div {
+    margin: 0;
+    padding: 10px 5px;
+  }
+
+  .img-forwards {
+    background: #00a;
+    border-color: #007;
+  }
+  #gallery .img-forwards + .caption {
+    background: #00a;
+    border-color: #007;
+  }
+
+  .img-angles {
+    background: #fa0;
+    border-color: #f90;
+  }
+  #gallery .img-angles + .caption {
+    background: #fa0;
+    border-color: #f90;
+  }
+  .img-sides {
+    background: #f00;
+    border-color: #a00;
+  }
+  #gallery .img-sides + .caption {
+    background: #f00;
+    border-color: #a00;
+  }
+
+  .treasurebox img { 
+    margin: 20px auto;
+  }
+
+  .dashboard .caption {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 0px;
+  }
