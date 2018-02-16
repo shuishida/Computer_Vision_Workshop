@@ -20,7 +20,6 @@ try:
     loop = asyncio.get_event_loop()
     tasks = []
     
-    dirname = os.path.dirname(os.path.abspath(__file__))
     root = sys.argv[1]
     for root, dirs, files in os.walk(root):
         for name in files:
